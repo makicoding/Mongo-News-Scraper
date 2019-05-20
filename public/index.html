@@ -2,9 +2,13 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
+
+    <!-- Bootstrap CSS Link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <title>Mongo News Scraper</title>
     <style>
-      body { background-color: #F2F6D0 }
+      body { background-color: rgb(173, 255, 255) }
       #wrapper {
         width: 960px;
         margin-left: auto;
@@ -38,11 +42,28 @@
   </head>
   <body>
     <div id="wrapper">
-      <h1>News Scraper</h1>
+      <h1>NY Times News Scraper</h1>
+
+      <!-- Scraping Button -->
+      <a href="/scrape" class="btn btn-primary" role="button">Scrape from NY Times</a>
+      <br></br>
+
       <div id="articles"></div>
       <div id="notes"></div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+    <!-------------------------------------------------------------------------------->
+    <!-- jQuery -->
+    <!-- This must come before the Bootstrap Popper and Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Bootstrap Popper and Bootstrap JS -->
+    <!-- Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
     <script src="app.js"></script>
   </body>
 </html>
