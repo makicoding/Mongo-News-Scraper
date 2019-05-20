@@ -58,6 +58,7 @@ app.get("/scrape", function(req, res) {
         // .children("a")
         .children()
         .text();
+        
       result.link = $(this)
         // .children("a")
         .find("a")
